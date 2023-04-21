@@ -1,0 +1,129 @@
+/* our campuses styles */
+
+.each-campus {
+    width: 100%;
+    border-radius: var(--radius);
+    transition: var(--transition);
+    box-shadow: var(--box-shadow-light);
+    background: var(--clr-white);
+}
+
+.each-campus:hover {
+    box-shadow: var(--box-shadow-dark);
+    transform: translateY(-2px) scale(1.002);
+}
+
+.each-campus .image-container {
+    aspect-ratio: 355/250;
+    position: relative;
+}
+
+.each-campus .campus-info {
+    padding: 30px 20px;
+}
+
+.each-campus .image-container .share-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translate(-50%, 50%);
+    background-color: var(--clr-white);
+    border: 7px solid var(--clr-white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+}
+
+.each-campus .image-container .share-icon:hover {
+    background-color: var(--clr-primary-light);
+    border: 7px solid var(--clr-primary-light);
+}
+
+.each-campus .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius);
+    transition: var(--transition);
+}
+
+.each-campus:hover img {
+    transform: translateY(2px) rotateZ(2deg);
+}
+
+.each-campus .campus-info .campus-title {
+    font-size: 40px;
+    color: var(--clr-primary);
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+.each-campus .campus-info .desc {
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.each-campus .campus-info .address {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: var(--clr-primary);
+}
+
+@media screen and (min-width:992px) {
+    .each-campus .image-container {
+        aspect-ratio: 396/250;
+    }
+    .each-campus .campus-info .campus-title{
+        font-size: 30px;
+    }
+}
+/* fecility styles */
+
+.each-fecility {
+    width: 100%;
+    background: var(--clr-white);
+    box-shadow: var(--box-shadow-light);
+    transition: var(--transition);
+    border-radius: var(--radius);
+}
+.each-fecility:hover{
+    box-shadow: var(--box-shadow-dark);
+    transform: translateY(2px) scale(1.002);
+}
+.each-fecility .image-container{
+    aspect-ratio: 355/250;
+    overflow: hidden;
+}
+.each-fecility .image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-right-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+}
+.each-fecility .fecility-info .fecility-title{
+    font-size: 22px;
+    color: var(--clr-primary);
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.each-fecility .fecility-info .desc{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}

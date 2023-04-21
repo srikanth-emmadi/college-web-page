@@ -1,0 +1,77 @@
+
+/* footer styles */
+
+.footer-container {
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../assets/college.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+.footer-container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--clr-black-80);
+    z-index: -1;
+}
+.footer-center{
+    display: flex;
+    flex-direction: column;
+}
+.footer-container .footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    padding: 0;
+}
+.footer-container .footer-link{
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.footer-container .footer-link.active, .footer-container .footer-link:hover{
+    text-decoration: underline;
+}
+.footer-container .footer-social-links{
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer-container .footer-social-link{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--clr-white-light);
+    border-radius: 50%;
+    transition: var(--transition);
+}
+.footer-container .footer-social-link img{
+    width: 20px;
+}
+.footer-container .footer-social-link:hover{
+    transform: translateY(3px);
+    background: var(--clr-pink-light);
+}
+.footer-copy-right{
+    font-size: 16px;
+    color: var(--clr-white);
+    letter-spacing: 1px;
+    line-height: 24px;
+    text-transform: capitalize;
+    text-align: center;
+}

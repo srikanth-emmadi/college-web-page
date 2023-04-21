@@ -1,0 +1,118 @@
+/* nav bar css */
+
+.nav-container {
+    width: 100%;
+    min-height: 50px;
+    background: var(--clr-black-90);
+}
+
+.nav-container.sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: var(--transition);
+    z-index: 9;
+}
+
+.nav-center {
+    min-height: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.nav-links-main {
+    display: none;
+}
+
+.nav-social-links-main {
+    display: none;
+}
+
+.nav-container .logo-section img {
+    width: 30px;
+}
+
+.nav-container .hamburger img {
+    width: 30px;
+    margin-left: auto;
+}
+
+@media screen and (min-width:992px) {
+    .nav-container {
+        min-height: 70px;
+    }
+
+    .nav-container .logo-section img {
+        padding-left: 5rem;
+        width: 50px;
+        cursor: pointer;
+    }
+
+    .nav-center {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav-container .hamburger {
+        display: none;
+    }
+
+    .nav-container .nav-links-main {
+        display: flex;
+    }
+
+    .nav-container .nav-links {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .nav-container .nav-link {
+        color: var(--clr-white);
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 5px 10px;
+        border-radius: var(--radius);
+        transition: var(--transition);
+    }
+
+    .nav-container .nav-link.active,
+    .nav-container .nav-link:hover {
+        color: var(--clr-black-90);
+        background: var(--clr-white-light);
+    }
+
+    .nav-social-links-main .nav-social-links {
+        display: flex;
+        column-gap: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-container .nav-social-links-main {
+        display: flex;
+        justify-self: center;
+    }
+
+    .nav-social-links-main .nav-social-link {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--clr-white);
+        border-radius: 50%;
+    }
+
+    .nav-container .nav-social-links img {
+        width: 18px;
+    }
+
+    .nav-social-links-main .nav-social-link:hover {
+        transition: var(--transition);
+        transform: translateY(3px);
+        background: var(--clr-white-light);
+    }
+}
