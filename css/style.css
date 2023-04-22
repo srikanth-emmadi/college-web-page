@@ -28,7 +28,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 *:focus {
     outline-width: 2px;
     outline-offset: 1px;
