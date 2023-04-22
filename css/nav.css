@@ -51,6 +51,7 @@
     }
 
     .nav-center {
+        min-height: 70px;
         grid-template-columns: repeat(3, 1fr);
     }
 

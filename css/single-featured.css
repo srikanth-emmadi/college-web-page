@@ -22,6 +22,7 @@
 .single-featured-text-component .about-info p{
     font-size: 16px;
     letter-spacing: 1px;
+    padding-bottom: 20px;
 }
 .single-featured {
     display: flex;
